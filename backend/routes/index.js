@@ -10,7 +10,7 @@ const { userRoute } = require("./user");
 
 /* GET home page. */
 indexRouter.get("/", function (req, res, next) {
-  res.send("<h1 style='text-align:center'>Welcome to or Test Task</h1>");
+  res.send("<h1 style='text-align:center'>Welcome to our Test Task</h1>");
 });
 
 indexRouter.use("/auth", authRouter);
