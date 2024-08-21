@@ -1,1 +1,6 @@
-# movie-mania
+# Movie-Mania
+
+## Frontend
+
+
+## Backend
