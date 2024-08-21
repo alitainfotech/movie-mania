@@ -1,4 +1,4 @@
-import { get, post, postFormData, put, putFormData } from "../AxiosConfig";
+import { get, post, postFormData, putFormData } from "../AxiosConfig";
 
 const URI = "/movie";
 
