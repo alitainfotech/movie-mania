@@ -6,12 +6,7 @@ const {
   RESPONSE_STATUS_MESSAGE_INTERNAL_SERVER_ERROR,
   AUTH_USER_DETAILS,
 } = require("../../constants/global.constants");
-const { passwordHash, comparePasswordHash } = require("../../helpers/fn");
 
-const { AUTH_MESSAGES } = require("../../controller-messages/auth.messages");
-
-const authService = require("../../services/auth.service");
-const User = require("../../models/user/user.model");
 const Movie = require("../../models/movie/movie.model");
 
 /* Movie Listing// METHOD: GET */
@@ -93,7 +88,6 @@ const addMovie = async (req, res) => {
       return res.status(RESPONSE_STATUS_CODE_OK).json(responsePayload);
     }
   } catch (error) {
-    console.log("errrrr", error);
     const responsePayload = {
       status: RESPONSE_PAYLOAD_STATUS_ERROR,
       message: null,
@@ -143,8 +137,6 @@ const updateMovie = async (req, res) => {
       return res.status(RESPONSE_STATUS_CODE_OK).json(responsePayload);
     }
   } catch (error) {
-    console.log("errrrr", error);
-
     const responsePayload = {
       status: RESPONSE_PAYLOAD_STATUS_ERROR,
       message: null,
@@ -190,8 +182,6 @@ const getOneMovie = async (req, res) => {
       return res.status(RESPONSE_STATUS_CODE_OK).json(responsePayload);
     }
   } catch (error) {
-    console.log("errrrr", error);
-
     const responsePayload = {
       status: RESPONSE_PAYLOAD_STATUS_ERROR,
       message: null,

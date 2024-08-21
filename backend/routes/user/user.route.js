@@ -3,6 +3,6 @@ var userRouters = express.Router();
 
 /* GET ALL user listing for dropdown */
 
-userRouters.get("/", () => console.log(":sd"));
+userRouters.get("/", () => console.log("User route for testing"));
 
 module.exports = { userRouters };
