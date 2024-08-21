@@ -372,13 +372,13 @@ button {
 
 .div-drop-img div.btn-edit-one {
   position: absolute;
-  bottom: 10px;
+  bottom: 25px;
   background: transparent;
   border: 0;
   height: 50px;
   margin: 0;
-  padding: 0;
-  right: 20px;
+  right: 30px;
+  cursor: pointer;
 }
 
 .edit-img-listing .item-edit > div {
@@ -542,8 +542,15 @@ button {
   width: auto;
 }
 
+}
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-
-
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

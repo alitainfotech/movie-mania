@@ -28,9 +28,6 @@ const movieSlice = createSlice({
   reducers: {
     getMoviesRequest: (state) => {
       state.MoviesLoading = true;
-      state.Movies = [];
-      state.PageDetails = "";
-      state.MoviesError = "";
     },
     getMoviesSuccess: (state, action) => {
       state.MoviesLoading = false;

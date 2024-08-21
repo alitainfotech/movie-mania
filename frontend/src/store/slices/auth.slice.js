@@ -51,11 +51,6 @@ export const authSlice = createSlice({
 
 export const { LoginRequest, LoginSuccess, LoginError,
     LogOutRequest, LogOutSuccess, LogOutError,
-    PasswordRequest, PasswordSuccess, PasswordError,
-    ResetPasswordRequest, ResetPasswordSuccess, ResetPasswordError,
-    getProfileRequest, getProfileSuccess, getProfileError,
-    updateProfileRequest, updateProfileSuccess, updateProfileError,
-    updatePasswordRequest, updatePasswordSuccess, updatePasswordError,
     resetAllMessages
 } = authSlice.actions
 export default authSlice.reducer
